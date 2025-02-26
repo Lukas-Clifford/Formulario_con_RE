@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="config.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="/" method="get" id="formulario">
+
+    <label>Nombre: </label>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre Apellido">
+    <span id="nombreMsgError" class="msgError">
+        El formato es incorrecto <br> Ej: Lukas Clifford</span>
+    <br>
+
+
+
+    <label>Edad: </label>
+    <input type="text" id="edad" name="edad" placeholder="0-99">
+    <span id="edadMsgError" class="msgError">
+        El formato es incorrecto <br> Edad comprendida entre 0-99</span>
+    <br>
+
+
+
+    <label>Teléfono: </label>
+    <input type="text" id="telefono" name="telefono" placeholder="123456">
+    <span id="telefonoMsgError" class="msgError">
+        El formato es incorrecto <br> Debe contener 6 numeros</span>
+    <br>
+
+
+
+    <label>Email (gmail o hotmail): </label>
+    <input type="text" id="email" name="email" placeholder="email@hotmail.com">
+    <span id="emailMsgError" class="msgError">
+        El formato es incorrecto <br> Ej: email@gmail/hotmail.com</span>
+    <br>
+
+
+
+    <label>Contraseña (8 caracteres): </label>
+    <input type="text" id="contraseña" name="contraseña" placeholder="a@123456">
+    <span id="contraseñaMsgError" class="msgError">
+        El formato es incorrecto</span>
+    <br>
+
+
+
+    <label>Afición: </label>
+    <select id="aficion" name="aficion">
+        <option value="">Elige un deporte</option>
+        <option value="futbol">Fútbol</option>
+        <option value="tenis">Tenis</option>
+        <option value="baloncesto">Baloncesto</option>
+    </select>
+    <span id="aficionMsgError" class="msgError">
+        Elige una opcion</span>
+    <br>
+
+
+
+    <div>
+        <label>Transporte más usado: </label><br>
+
+        <input type="radio" id="coche" name="transporte" value="coche">
+        <label for="coche"> Coche</label><br>
+
+        <input type="radio" id="moto" name="transporte" value="moto">
+        <label for="moto"> Moto</label><br>
+
+        <input type="radio" id="skate" name="transporte" value="skate">
+        <label for="skate"> Motopatin</label><br>
+
+        <input type="radio" id="bicicleta" name="transporte" value="bicicleta">
+        <label for="bicicleta"> Bicicleta</label><br>
+
+        <span id="transporteMsgError" class="msgError">
+        Elige una opcion</span>
+        <br>
+    </div>
+
+
+
+
+    <div>
+        <br>
+        <input type="checkbox" id="acuerdoPrivacidad" name="acuerdoPrivacidad">
+        <label for="acuerdoPrivacidad"> Deseo recibir notificaciones y <br> apruebo la política de privacidad</label><br>
+        <span id="acuerdoMsgError" class="msgError">
+        Obligatorio*</span>
+        <br>
+    </div>
+
+
+    <br>
+    <input type="button" onclick="enviar()" value="Enviar">
+
+
+</form>
+
+</body>
+</html>
